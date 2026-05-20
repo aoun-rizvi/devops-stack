@@ -1,0 +1,7 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: startup-api
+  namespace: devops-stack
+spec:
+  replicas: 1

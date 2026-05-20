@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: startup-api
+  namespace: devops-stack
+spec:
+  type: ClusterIP
+  selector:
+    app: startup-api
+  ports:
+    - name: http
+      port: 80
+      targetPort: http
